@@ -65,12 +65,12 @@ app.get("/person/:id", async (req, res) => {
 app.patch('/person/:id', async (req, res) => {
   const id = req.params.id
 
-  const { name, salary, approved } = req.body
+  const { nome, curso, matrícula } = req.body
 
   const person = {
-    name,
-    salary,
-    approved,
+    nome,
+    curso,
+    matrícula,
   }
 
   try {
